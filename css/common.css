@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* ======= task-1 ======= */
+#categories {
+  border-radius: 8px;
+  padding: 24px;
+  width: 440px;
+  /* height: 888px; */
+  background: #fff;
+}
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  /* height: 264px; */
+  background: #f6f6fe;
+  margin-bottom: 24px;
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+.item h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.item ul li {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.item ul li:last-child {
+  margin-bottom: 0;
+}
+/* ======= /task-1 ======= */
+
+/* ======= task-2 ======= */
+.gallery {
+  max-width: 1440px;
+  background: #fff;
+  padding: 100px 156px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.image-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.gallery img {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
+/* ======= /task-2 ======= */
+
+/* ======= task-3 ======= */
+.your-name {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  background: #fff;
+}
+#name-input {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+.your-name .title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+/* ======= /task-3 ======= */
+
+/* ======= task-4 ======= */
+.login-form {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  background: #fff;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 16px;
+}
+.input-field {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+.input-field:hover {
+  border: 1px solid #000;
+}
+.input-field:active {
+  border: 1px solid #808080;
+}
+.label-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.submit-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.submit-btn:hover {
+  background: #6c8cff;
+}
+/* ======= /task-4 ======= */
+
+/* ======= task-5 ======= */
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.widget p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.change-color {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+}
+/* ======= /task-5 ======= */
