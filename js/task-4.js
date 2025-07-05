@@ -8,7 +8,6 @@ const checkForm = event => {
     password: registerForm.elements.password.value.trim(),
   };
 
-  // console.log(formData.email);
   if (formData.email.trim() === '' || formData.password.trim() === '') {
     return alert('All form fields must be filled in');
   }

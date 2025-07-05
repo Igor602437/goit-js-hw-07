@@ -35,4 +35,5 @@ const addImages = images
       </li> `
   )
   .join('');
+
 gallery.insertAdjacentHTML('beforeend', addImages);

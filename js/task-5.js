@@ -5,23 +5,20 @@ function getRandomHexColor() {
 }
 
 const ref = {
-  widget: document.querySelector('.widget'),
+  body: document.querySelector('body'),
   changeBtn: document.querySelector('.change-color'),
   spanColor: document.querySelector('.color'),
 };
 
 const newColor = event => {
   const colorChange = {
-    box: ref.widget.style,
-    span: ref.spanColor.style, //,
+    box: ref.body.style,
+    span: ref.spanColor,
   };
-
   const newColor = getRandomHexColor();
 
   colorChange.box.backgroundColor = newColor;
-  colorChange.span.color = newColor;
-  // console.log(colorChange.box.backgroundColor);
-  // console.log(ref.widget.style.backgroundColor);
+  colorChange.span.textContent = newColor;
 };
 
 ref.changeBtn.addEventListener('click', newColor);
