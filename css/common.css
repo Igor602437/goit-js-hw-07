@@ -156,6 +156,7 @@ button {
   border-radius: 4px;
   width: 360px;
   height: 40px;
+  margin-top: 8px;
 }
 .input-field:hover {
   border: 1px solid #000;
